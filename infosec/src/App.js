@@ -1,42 +1,17 @@
 import logo from './logo.svg'
 import './App.css'
-import {FcGoogle} from 'react-icons/fc'
-import {CiFacebook} from 'react-icons/ci'
-import {BsTwitter} from 'react-icons/bs'
+import { FcGoogle } from 'react-icons/fc'
+import { CiFacebook } from 'react-icons/ci'
+import { BsTwitter } from 'react-icons/bs'
 
 function App() {
   return (
     <div className="App">
-      <div
-        style={{
-          // border: '1px solid red',
-          width: '320PX',
-          height: '650px',
-          margin: 'auto',
-          boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
-        }}
-      >
-        <div
-          style={{
-            // border: '1px solid red',
-            display: 'flex',
-            width: '300PX',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textAlign: 'center',
-            margin: 'auto',
-          }}
-        >
+      <div className="parent">
+        <div className="parent1">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <p
-              style={{
-                textDecoration: 'underline',
-                marginTop: '-10px',
-                fontSize: '12px',
-                width:"80%"
-              }}
-            >
+            <p className="para">
               This is an assignment of INFOSEC BRIDGE.This is basically a login
               UI.
             </p>
@@ -61,24 +36,32 @@ function App() {
             <button type="">Login</button>
           </div>
           <div className="forgotpassDiv">
-          <p>Forgot Password?</p>
-        </div>
-         
-         <div className="loginwithdiv">
-          <p>or login with</p>
-         </div>
+            <p>Forgot Password?</p>
+          </div>
 
-         <div className="socialmediadiv">
-          <FcGoogle style={{height:'20px', width:'20px',cursor:'pointer'}} />
-           <CiFacebook style={{height:'20px', width:'20px',cursor:'pointer'}}/> 
-          <BsTwitter style={{height:'20px', width:'20px',cursor:'pointer'}}/> 
-         </div>
+          <div className="loginwithdiv">
+            <p>or login with</p>
+          </div>
+
+          <div className="socialmediadiv">
+            <FcGoogle
+              style={{ height: '20px', width: '20px', cursor: 'pointer' }}
+            />
+            <CiFacebook
+              style={{ height: '20px', width: '20px', cursor: 'pointer' }}
+            />
+            <BsTwitter
+              style={{ height: '20px', width: '20px', cursor: 'pointer' }}
+            />
+          </div>
         </div>
-         <div className='spandiv'>
-          <span>Don't have an account?</span><span className='span'>Create new now!</span>
-          <br/>
-          <span>By signing up you are agree with our</span><span className='span1'>Terms & condition</span>
-         </div>
+        <div className="spandiv">
+          <span>Don't have an account?</span>
+          <span className="span">Create new now!</span>
+          <br />
+          <span>By signing up you are agree with our</span>
+          <span className="span1">Terms & condition</span>
+        </div>
       </div>
     </div>
   )
