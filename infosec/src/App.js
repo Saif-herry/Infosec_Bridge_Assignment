@@ -9,15 +9,16 @@ function App() {
     <div className="App">
       <div
         style={{
-          border: '1px solid red',
+          // border: '1px solid red',
           width: '320PX',
-          height: '600px',
+          height: '650px',
           margin: 'auto',
+          boxShadow:'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
         }}
       >
         <div
           style={{
-            border: '1px solid red',
+            // border: '1px solid red',
             display: 'flex',
             width: '300PX',
             justifyContent: 'center',
@@ -32,7 +33,8 @@ function App() {
               style={{
                 textDecoration: 'underline',
                 marginTop: '-10px',
-                fontSize: '15px',
+                fontSize: '12px',
+                width:"80%"
               }}
             >
               This is an assignment of INFOSEC BRIDGE.This is basically a login
@@ -67,12 +69,16 @@ function App() {
          </div>
 
          <div className="socialmediadiv">
-          <FcGoogle/>
-           <CiFacebook/> 
-          <BsTwitter/> 
+          <FcGoogle style={{height:'20px', width:'20px',cursor:'pointer'}} />
+           <CiFacebook style={{height:'20px', width:'20px',cursor:'pointer'}}/> 
+          <BsTwitter style={{height:'20px', width:'20px',cursor:'pointer'}}/> 
          </div>
         </div>
-        
+         <div className='spandiv'>
+          <span>Don't have an account?</span><span className='span'>Create new now!</span>
+          <br/>
+          <span>By signing up you are agree with our</span><span className='span1'>Terms & condition</span>
+         </div>
       </div>
     </div>
   )
