@@ -1,5 +1,8 @@
 import logo from './logo.svg'
 import './App.css'
+import {FcGoogle} from 'react-icons/fc'
+import {CiFacebook} from 'react-icons/ci'
+import {BsTwitter} from 'react-icons/bs'
 
 function App() {
   return (
@@ -8,7 +11,7 @@ function App() {
         style={{
           border: '1px solid red',
           width: '320PX',
-          height: '500px',
+          height: '600px',
           margin: 'auto',
         }}
       >
@@ -55,7 +58,21 @@ function App() {
           <div>
             <button type="">Login</button>
           </div>
+          <div className="forgotpassDiv">
+          <p>Forgot Password?</p>
         </div>
+         
+         <div className="loginwithdiv">
+          <p>or login with</p>
+         </div>
+
+         <div className="socialmediadiv">
+          <FcGoogle/>
+           <CiFacebook/> 
+          <BsTwitter/> 
+         </div>
+        </div>
+        
       </div>
     </div>
   )
