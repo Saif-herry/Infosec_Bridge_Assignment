@@ -4,7 +4,7 @@
 
 .parent {
   width: 320px;
-  height: 650px;
+  height: 665px;
   margin: auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -19,10 +19,11 @@
 }
 
 .para {
+  border: 1px solid red;
   text-decoration: underline;
   margin-top: -10px;
-  font-size: 12px;
-  width: 80%;
+  font-size: 11px;
+  width: 65%;
 }
 
 .stage1 {
